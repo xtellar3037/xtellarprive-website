@@ -27,3 +27,31 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Editorial image frames — graceful look while images load (or if a link ever breaks) */
+.img-frame {
+  background: linear-gradient(135deg, #11151c 0%, #0b0e14 60%, #11151c 100%);
+}
+.img-frame img {
+  background-color: #11151c;
+}
+
+/* Member login modal */
+#login-modal {
+  transition: opacity 0.25s ease;
+}
+#login-modal[aria-hidden="true"] {
+  opacity: 0;
+  pointer-events: none;
+}
+#login-modal[aria-hidden="false"] {
+  opacity: 1;
+  pointer-events: auto;
+}
+#login-modal .modal-panel {
+  transform: translateY(16px) scale(0.98);
+  transition: transform 0.3s ease;
+}
+#login-modal[aria-hidden="false"] .modal-panel {
+  transform: translateY(0) scale(1);
+}
