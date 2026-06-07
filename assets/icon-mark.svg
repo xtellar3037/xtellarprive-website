@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+    <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="softglow">
+    <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+    <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+
+<g transform="translate(100,100)">
+  <polygon points="0,-82 14.3,-29.8 64.1,-51.2 32.2,-7.3 79.9,18.3 25.8,20.6 35.5,74 0,33 -35.5,74 -25.8,20.6 -79.9,18.3 -32.2,-7.3 -64.1,-51.2 -14.3,-29.8" fill="none" />
+  <g transform="rotate(40) scale(0.68)">
+    <polygon points="0,-82 14.3,-29.8 64.1,-51.2 32.2,-7.3 79.9,18.3 25.8,20.6 35.5,74 0,33 -35.5,74 -25.8,20.6 -79.9,18.3 -32.2,-7.3 -64.1,-51.2 -14.3,-29.8" fill="none" stroke="#c9a86a" stroke-width="0.9" opacity="0.38"/>
+  </g>
+  <g transform="rotate(18) scale(0.88)">
+    <polygon points="0,-82 14.3,-29.8 64.1,-51.2 32.2,-7.3 79.9,18.3 25.8,20.6 35.5,74 0,33 -35.5,74 -25.8,20.6 -79.9,18.3 -32.2,-7.3 -64.1,-51.2 -14.3,-29.8" fill="none" stroke="#c9a86a" stroke-width="1.15" opacity="0.65"/>
+  </g>
+  <polygon points="0,-82 14.3,-29.8 64.1,-51.2 32.2,-7.3 79.9,18.3 25.8,20.6 35.5,74 0,33 -35.5,74 -25.8,20.6 -79.9,18.3 -32.2,-7.3 -64.1,-51.2 -14.3,-29.8" fill="none" stroke="#c9a86a" stroke-width="1.7" filter="url(#glow)"/>
+  <circle cx="0" cy="-82" r="2.5" fill="#c9a86a" filter="url(#softglow)"/>
+  <circle cx="64.1" cy="-51.2" r="2.5" fill="#c9a86a" filter="url(#softglow)"/>
+  <circle cx="79.9" cy="18.3" r="2.5" fill="#c9a86a" filter="url(#softglow)"/>
+  <circle cx="35.5" cy="74" r="2.5" fill="#c9a86a" filter="url(#softglow)"/>
+  <circle cx="-35.5" cy="74" r="2.5" fill="#c9a86a" filter="url(#softglow)"/>
+  <circle cx="-79.9" cy="18.3" r="2.5" fill="#c9a86a" filter="url(#softglow)"/>
+  <circle cx="-64.1" cy="-51.2" r="2.5" fill="#c9a86a" filter="url(#softglow)"/>
+  <polygon points="0,0 -2.5,-3 -9,-9 -3,-2.5" fill="#c9a86a" opacity="0.9"/>
+  <polygon points="0,0 2.5,-3 9,-9 3,-2.5" fill="#c9a86a" opacity="0.9"/>
+  <polygon points="0,0 2.5,3 9,9 3,2.5" fill="#c9a86a" opacity="0.9"/>
+  <polygon points="0,0 -2.5,3 -9,9 -3,2.5" fill="#c9a86a" opacity="0.9"/>
+  <line x1="-2" y1="-5.5" x2="-2" y2="5.5" stroke="#c9a86a" stroke-width="1.05" stroke-linecap="round"/>
+  <line x1="-3.5" y1="-5.5" x2="-0.5" y2="-5.5" stroke="#c9a86a" stroke-width="0.7" stroke-linecap="round" opacity="0.85"/>
+  <line x1="-3.5" y1="5.5" x2="-0.5" y2="5.5" stroke="#c9a86a" stroke-width="0.7" stroke-linecap="round" opacity="0.85"/>
+  <path d="M -2,-5.5 Q 6.5,-5.5 6.5,-2.5 Q 6.5,0.5 -2,0.5" fill="none" stroke="#c9a86a" stroke-width="1.05" stroke-linecap="round"/>
+</g>
+</svg>
