@@ -35,23 +35,3 @@ body {
 .img-frame img {
   background-color: #11151c;
 }
-
-/* Member login modal */
-#login-modal {
-  transition: opacity 0.25s ease;
-}
-#login-modal[aria-hidden="true"] {
-  opacity: 0;
-  pointer-events: none;
-}
-#login-modal[aria-hidden="false"] {
-  opacity: 1;
-  pointer-events: auto;
-}
-#login-modal .modal-panel {
-  transform: translateY(16px) scale(0.98);
-  transition: transform 0.3s ease;
-}
-#login-modal[aria-hidden="false"] .modal-panel {
-  transform: translateY(0) scale(1);
-}
