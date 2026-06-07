@@ -1,0 +1,29 @@
+/* Xtellar Privé — supplementary styles (Tailwind handles most via CDN) */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #c9a86a #11151c;
+}
+
+/* Sticky header gets a solid background once scrolled */
+#site-header.scrolled {
+  background-color: rgba(11, 14, 20, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Gentle fade-and-rise reveal for sections as they enter the viewport */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
